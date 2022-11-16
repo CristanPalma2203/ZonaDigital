@@ -66,18 +66,18 @@ const Profile = () => {
 
     return (
         <div className="Profile">
-            <h1>Profile</h1>
+            <h1>Perfil de {user.user.name && user.user.name}</h1>
             <div className="container">
                 <div className="static">
                     {user.user.name &&
                         <div className="fullname">
-                            <h3>Full Name</h3>
+                            <h3>Nombre Completo</h3>
                             <h5 >{user.user.name}</h5>
                         </div>
                     }
                     {user.user.email &&
                         <div className="email">
-                            <h3>Email</h3>
+                            <h3>Correo</h3>
                             <h5 >{user.user.email}</h5>
                         </div>
                     }
@@ -85,26 +85,26 @@ const Profile = () => {
                         user.user.warehouseNo &&
                         <div className="warehouse">
 
-                            <h3>Warehouse capacity</h3>
+                            <h3>Capacidad de almacén</h3>
                             {user.user.warehouseNo}
-                            <h3>Edit capacity</h3>
+                            <h3>Editar capacidad</h3>
                             <input type="text" value={whno} onChange={(e) => setWhno(e.target.value)}/>
-                            <button className="rev" onClick={() => updateWareHouse()}>Update</button>
+                            <button className="rev" onClick={() => updateWareHouse()}>Actualizar</button>
                         </div> 
                     }
                     <div className="spacer"></div>
                 </div>
                 <div className="edit-details">
-                    <h3>Edit Details</h3>
-                    <label htmlFor="name">Full Name</label>
+                    <h3>Editar Detalles</h3>
+                    <label htmlFor="name">Nombre Completo</label>
                     <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} />
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Correo</label>
                     <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                    <label htmlFor="currentPassword">Current Password</label>
+                    <label htmlFor="currentPassword">Contraseña Actual</label>
                     <input type="password" id="currentPassword" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} />
-                    <label htmlFor="newPassword">New Password</label>
+                    <label htmlFor="newPassword">Nueva Contraseña</label>
                     <input type="password" id="newPassword" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
-                    <button className="save rev" onClick={() => handleSaveUser()}>Save</button>
+                    <button className="save rev" onClick={() => handleSaveUser()}>Guardar</button>
                     {
                         errors && errors.map(({ msg }, index) => <div key={index} className="error">{msg}</div>)
                     }

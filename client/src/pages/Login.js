@@ -48,7 +48,7 @@ const Login = ({ history }) => {
       <div className='main-login'>
         <h1>LOGIN</h1>
         <div className='login-form'>
-          <label htmlFor='email'>Email</label>
+          <label htmlFor='email'>Correo</label>
           <input
             type='text'
             id='email'
@@ -56,7 +56,7 @@ const Login = ({ history }) => {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <label htmlFor='pass'>Password</label>
+          <label htmlFor='pass'>Contraseña</label>
           <input
             type='password'
             id='pass'

@@ -24,14 +24,14 @@ const NavigationBar = ({ history }) => {
                     user
                         ?
                         <React.Fragment>
-                            <div className={history.location.pathname.includes('dashboard') ? "nav-link active-link" : "nav-link" } onClick={() => history.push('/dashboard')}>Dashboard</div>
-                            <div className={history.location.pathname.includes('profile') ? "nav-link active-link" : "nav-link" } onClick={() => history.push('/profile')}>Profile</div>
-                            <button onClick={() => handleLogout()}>Log Out</button>
+                            <div className={history.location.pathname.includes('dashboard') ? "nav-link active-link" : "nav-link" } onClick={() => history.push('/dashboard')}>Panel de control</div>
+                            <div className={history.location.pathname.includes('profile') ? "nav-link active-link" : "nav-link" } onClick={() => history.push('/profile')}>Perfil</div>
+                            <button onClick={() => handleLogout()}>Cerrar sesión</button>
                         </React.Fragment>
                         :
                         <React.Fragment>
-                            <button onClick={() => history.push('/signup')}>Sign Up</button>
-                            <button onClick={() => history.push('/login')}>Sign In</button>
+                            <button onClick={() => history.push('/signup')}>Inscribirse</button>
+                            <button onClick={() => history.push('/login')}>Registrarse</button>
                         </React.Fragment>
                 }
 
