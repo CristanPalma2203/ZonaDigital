@@ -30,7 +30,7 @@ const Products = () => {
     <div className="products">
       <div className="left">
         <div className="filterItem">
-          <h2>Product Categories</h2>
+          <h2>Categorías de Producto</h2>
           {data?.map((item) => (
             <div className="inputItem" key={item.id}>
               <input
@@ -44,7 +44,7 @@ const Products = () => {
           ))}
         </div>
         <div className="filterItem">
-          <h2>Filter by price</h2>
+          <h2>Filtrar por precio</h2>
           <div className="inputItem">
             <span>0</span>
             <input
@@ -57,7 +57,7 @@ const Products = () => {
           </div>
         </div>
         <div className="filterItem">
-          <h2>Sort by</h2>
+          <h2>Ordenar por</h2>
           <div className="inputItem">
             <input
               type="radio"
@@ -66,7 +66,7 @@ const Products = () => {
               name="price"
               onChange={(e) => setSort("asc")}
             />
-            <label htmlFor="asc">Price (Lowest first)</label>
+            <label htmlFor="asc">Precio (Más bajo primero)</label>
           </div>
           <div className="inputItem">
             <input
@@ -76,14 +76,14 @@ const Products = () => {
               name="price"
               onChange={(e) => setSort("desc")}
             />
-            <label htmlFor="desc">Price (Highest first)</label>
+            <label htmlFor="desc">Precio (La más alta primero)</label>
           </div>
         </div>
       </div>
       <div className="right">
         <img
           className="catImg"
-          src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          src="https://images.unsplash.com/photo-1597260469329-e1201e075d82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=1600"
           alt=""
         />
         <List catId={catId} maxPrice={maxPrice} sort={sort} subCats={selectedSubCats}/>

@@ -20,7 +20,7 @@ const Cart = () => {
   };
 
   const stripePromise = loadStripe(
-    "pk_test_eOTMlr8usx1ctymXqrik0ls700lQCsX2UB"
+    "pk_test_51MBwaCIEahsMbAj4p8P1zVFwA6aBNP6CUrC0TxjVFPUM2yJXV6J53KArBgzXuLeK61bH0TkxmLrc96HsL4rWobWr00WYqlLCBM"
   );
   const handlePayment = async () => {
     try {
@@ -38,7 +38,7 @@ const Cart = () => {
   };
   return (
     <div className="cart">
-      <h1>Products in your cart</h1>
+      <h1>Productos en tu carrito</h1>
       {products?.map((item) => (
         <div className="item" key={item.id}>
           <img src={process.env.REACT_APP_UPLOAD_URL + item.img} alt="" />
@@ -59,9 +59,9 @@ const Cart = () => {
         <span>SUBTOTAL</span>
         <span>${totalPrice()}</span>
       </div>
-      <button onClick={handlePayment}>PROCEED TO CHECKOUT</button>
+      <button onClick={handlePayment}>PASAR POR LA CAJA</button>
       <span className="reset" onClick={() => dispatch(resetCart())}>
-        Reset Cart
+      Restablecer carrito
       </span>
     </div>
   );

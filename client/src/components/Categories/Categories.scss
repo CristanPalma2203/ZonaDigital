@@ -23,9 +23,12 @@
     overflow: hidden;
 
     button{
+      color: #fff;
       position: absolute;
       min-width: 100px;
       width: fit-content;
+      border-radius: 20px 0px 20px 0px;
+      font-size:20px;
       height: 50px;
       padding: 10px;
       top: 0;
@@ -35,15 +38,25 @@
       margin: auto;
       cursor: pointer;
       border: none;
-      background-color: white;
+      background-color: #0252ff;
       text-transform: uppercase;
       font-weight: 500;
     }
 
+     button:hover {
+      background: #4f78f1;
+      color: #fff;
+      border: 2px solid;
+  }
     img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    img:hover{
+   
+      opacity: 0.55;
+      filter: alpha(opacity=85);
     }
   }
 }

@@ -6,49 +6,43 @@ const Footer = () => {
     <div className="footer">
       <div className="top">
         <div className="item">
-          <h1>Categories</h1>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Shoes</span>
-          <span>Accessories</span>
-          <span>New Arrivals</span>
+          <h1>Categorías más populares</h1>
+          <span>Unidades SSD M.2</span>
+          <span>Tarjetas de Video</span>
+          <span>Celulares y Tablets</span>
+          <span>TV Streaming</span>
+          <span>Memorias RAM Arrivals</span>
+          <span>Headsets para Gamers</span>
+          <span>Gaming Goodies</span>
         </div>
         <div className="item">
-          <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
-          <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
+          <h1>Avisos y Políticas</h1>
+          <span>Aviso de Seguridad</span>
+          <span>Aviso de Marca</span>
+          <span>Privacidad</span>
+          <span>Garantia RMA</span>
+          <span>Delivery info</span>
         </div>
         <div className="item">
-          <h1>About</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
+          <h1>Sobre Nosotros</h1>
+          <span>Empleos</span>
+          <span>Historia</span>
+          <span>Sucursales</span>
+          <span>Servicios</span>
+          <span>Contacto</span>
         </div>
-        <div className="item">
-          <h1>Contact</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
-      </div>
+        
+      </div> 
       <div className="bottom">
         <div className="left">
-          <span className="logo">Lamastore</span>
+          <span className="logo"><img src="https://www.zonadigitalsv.com/assets/media/logos/logozdweb.png" alt="" srcset="" width={"150px"} /></span>
           <span className="copyright">
-            © Copyright 2023. All Rights Reserved
+          Copyright © 2023 Zona Digital El Salvador . Todos los derechos reservados.
           </span>
         </div>
         <div className="right">
-          <img src="/img/payment.png" alt="" />
+          <img src="/img/payment.jpg" alt="" />
+  
         </div>
       </div>
     </div>

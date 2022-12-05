@@ -18,43 +18,29 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
           <div className="item">
-            <img src="/img/en.png" alt="" />
-            <KeyboardArrowDownIcon />
+          <Link className ="link" to="/"><img src="https://www.zonadigitalsv.com/assets/media/logos/logozdweb.png" alt="" srcset="" width={"150px"} /></Link>
           </div>
           <div className="item">
-            <span>USD</span>
-            <KeyboardArrowDownIcon />
+            <Link className ="link" to="/products/1">Productos Destacados</Link>
           </div>
           <div className="item">
-            <Link className ="link" to="/products/1">Women</Link>
+            <Link className ="link" to="/products/2">Ofertas</Link>
           </div>
-          <div className="item">
-            <Link className ="link" to="/products/2">Men</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" to="/products/3">Children</Link>
-          </div>
+
         </div>
         <div className="center">
-          <Link className ="link" to="/">LAMASTORE</Link>
+         
         </div>
         <div className="right">
           <div className="item">
-            <Link className ="link" to="/">Homepage</Link>
+            <Link className ="link" to="/">Inicio</Link>
           </div>
           <div className="item">
-            <Link className ="link" to="/">About</Link>
+            <Link className ="link" to="/">Sobre Nosotros</Link>
           </div>
-          <div className="item">
-            <Link className ="link" to="/">Contact</Link>
-          </div>
-          <div className="item">
-            <Link className ="link" to="/">Stores</Link>
-          </div>
+
           <div className="icons">
-            <SearchIcon/>
-            <PersonOutlineOutlinedIcon/>
-            <FavoriteBorderOutlinedIcon/>
+
             <div className="cartIcon" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>
               <span>{products.length}</span>

@@ -82,26 +82,20 @@ const Product = () => {
                 )
               }
             >
-              <AddShoppingCartIcon /> ADD TO CART
+              <AddShoppingCartIcon /> AÑADIR AL CARRITO
             </button>
             <div className="links">
               <div className="item">
-                <FavoriteBorderIcon /> ADD TO WISH LIST
+                <FavoriteBorderIcon /> AÑADIR A LA LISTA DE DESEOS
               </div>
-              <div className="item">
-                <BalanceIcon /> ADD TO COMPARE
-              </div>
+             
             </div>
-            <div className="info">
-              <span>Vendor: Polo</span>
-              <span>Product Type: T-Shirt</span>
-              <span>Tag: T-Shirt, Women, Top</span>
-            </div>
+
             <hr />
             <div className="info">
-              <span>DESCRIPTION</span>
+              <span>DESCRIPCIÓN</span>
               <hr />
-              <span>ADDITIONAL INFORMATION</span>
+              <span>INFORMACIÓN ADICIONAL</span>
               <hr />
               <span>FAQ</span>
             </div>
